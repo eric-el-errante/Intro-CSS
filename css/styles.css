@@ -5,7 +5,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;   /* provides alternative font families in case they are not supported by browser */
     font-style: italic;                          /* normal, italic, oblique */
     font-variant: small-caps;                    /* normal, small-caps, etc */
-    font-size: 500%;                             /* many forms, small/medium/large, can designate pixels, or percentage of baseline font size */
+    font-size: 500%;                             /* small/medium/large, can designate pixels, or percentage of baseline font size */
     text-align: center;                          /* left, center, right, justify */
     line-height: 100%;                           /* adjust space between lines, percentage */
 }
@@ -38,4 +38,83 @@ footer {
     text-align: center;
     background: #FCAF17;
     color: #0021A5;
+}
+
+span {
+    background: #00ff00; /* will only take up the height and width necessary */
+}
+
+div {
+    background: #00ffff; /* will take up only the height necessary, but the entire width of screen */
+}
+
+span.inline {
+    height: 50px;          /* has no noticeable effect because it is inline element */
+    width: 75px;           /* has no noticeable effect because it is inline element */        
+    background: #00ff00;
+}
+
+span.inline-block {
+    height: 50px;
+    width: 150px;
+    background: #00ff00;
+    display: inline-block; /* This causes the height and width to be set as if it is a block and also inline element */
+}
+
+span.block {
+    height: 50px;      
+    width: 75px;           
+    background: #00ff00;
+    display: block;         /* This causes the height and width to be set as if it is a block element with each on new line like block elements*/
+
+}
+
+div.block {
+    height: 100px;          /* height of the div container will be 100px */
+    width: 45%;             /* width of the div container will be 45% across the screen */
+    background: #00ffff;
+}
+
+div.inline-block {
+    height: 100px;
+    width: 33%;
+    background: #00ffff;
+    display: inline-block; /* this will cause the div elements to stay as block but on same line */
+}
+
+p {
+    background: #ff00ff;
+    width: 200px;           /* width of p container will be 200 */
+    height: 100px;          /* height of p container will be 100 */
+}
+
+p.overflow-visible {
+    background: #ff00ff;
+    width: 50px;
+    height: 50px;
+    overflow: visible;    /* text will flow out of the box and all display */
+}
+
+p.overflow-hidden {
+    background: #ff00ff;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;       /* only text that fits within box will show */
+    float: right;
+}
+
+p.overflow-scroll {
+    background: #ff00ff;
+    width: 50px;
+    height: 50px;           /* gives horizontal/vertical scroll bars in box to display text */
+    overflow: scroll;
+    float: right;
+}
+
+p.overflow-auto {
+    background: #ff00ff;
+    width: 50px;
+    height: 50px;
+    overflow: auto;         /* adds scrollbars as needed */
+    float: right;
 }
