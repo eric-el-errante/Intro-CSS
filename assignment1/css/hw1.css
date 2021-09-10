@@ -1,0 +1,34 @@
+/* change background color */
+header {
+    background-color: #FA4616;
+  }
+  
+/* change font color, text to all caps, and center text */
+h1 {
+    color: #0021A5;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+/* change font color, text to all caps */
+h2 {
+    color: #0021A5;
+    text-transform: uppercase;
+  }
+  
+/* change background color */
+section {
+    background-color: #FA4616;
+  }
+  
+/* change background and font color, center text (not necessary) */
+a {
+    background-color: #0021A5;
+    color: #FA4616;
+    text-align: center;
+  }
+  
+/* do not display images on the page */
+img {
+    display: none;
+  }
