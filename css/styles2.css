@@ -1,0 +1,75 @@
+/* Inline elements do not take width/height: the "box" is the content */
+/* Non-inline elements can take width and height properties */
+/* Any element can have a border...useful to always put a border and then remove later because you can SEE the placement a container has */
+
+#One {
+    border: solid;             /* type of border: none, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden */
+    border-width: 1px;         /* width of the border */
+}
+
+#Two {
+    border: solid;             /* type of border: none, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden */
+    border-width: 5px;         /* width of the border */
+    border-color: #CC00AA;   /* color of border */
+    margin: 0px;               /* This will give is a margin between its neighbor */
+    padding: 5px;              /* space between the content and it's border */
+}
+
+#Three {
+    border: solid;
+    border-width: 1px;
+    border-color: #CC00AA;
+    margin: 10px;
+    padding: 0px;
+}
+
+#Four {
+    border: solid;
+    border-width: 5px 10px 15px 20px;   /* Top, right, middle bottom */
+    border-color: #CC00AA;
+    margin: 5px 10px 15px 20px;         /* Top, right, bottom, left */
+    padding: 5px 10px 15px 20px;        /* Top, right, middle bottom */
+}
+
+#Test {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+#center {
+    margin: 0 auto;                     /* 0 = top/bottom, auto = left/right */
+    display: block;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.content-box {
+    border: solid 10px black;
+    box-sizing: content-box;
+    width: 300px;
+    padding: 10px;
+}
+
+.border-box {
+    border: solid 10px black;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.play {
+    background-color: #0000CC;
+    width: 48%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    height: 500px;
+    margin: 0 auto;
+    display: inline-block;          /* this will put the divs on a line together */
+}

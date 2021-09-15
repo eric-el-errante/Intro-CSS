@@ -19,6 +19,7 @@ nav {
     font-variant: small-caps;
     font-size: 150%;
     font-family: sans-serif;
+    padding: 0px 0px 10px 0px;
 }
 
 h2 {
@@ -39,6 +40,13 @@ footer {
     background: #FCAF17;
     color: #0021A5;
 }
+
+section {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+}
+
 
 span {
     background: #00ff00; /* will only take up the height and width necessary */

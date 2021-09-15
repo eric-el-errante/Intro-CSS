@@ -8,7 +8,38 @@
 </head>
 
 <body>
+    <div id="One">This is a div with a solid 1px border and no other formatting.</div>
+    <div id="Two">This is a div with a solid 5px border, and and inside padding.</div>
+    <div id="Three">This is a div with a solid 1px border, and a margin between it and it's neighbors.</div>
+    <div id="One">This is a div with a solid 1px border and no other formatting.</div>
+    <div id="One">This is a div with a solid 1px border and no other formatting.</div>
+    <div id="Four">This is a div with random border widths, inside padding, and margins.</div>
+    <p>margin + border + padding + element width = actual width</p>
+    <div id="One">This is a div with a solid 1px border and no other formatting.</div>
+    <div id="One">This is a div with a solid 1px border and no other formatting.</div><br>
+    <div id="Test"></div>
+    width: 100, height 50, padding 10, margin 5, border 1.<br>THEREFORE<br>width = 100 + 10padding*2 + 5margin*2 + 1border*2 = 132<br>height = 50 + 10padding*2 + 5margin*2 + 1border*2 = 82<br>
+    <div id="center">Center an element must be (this is a div):<br>Margin: 0 auto<br>display: block<br>no float<br>no fixed or absolute position<br>width that is NOT auto</div><br><br>
+    <div class="content-box">box-sizing: content-box<br>content = 300<br>padding and border are ADDED to that.</div>
+    <div class="border-box">box-sizing: border-box<br>content + padding + border = 300</div><br>
+    Both of these divs have width=300, border of 10px and padding of 10px. However, box-sizing=border-box allows you to set the actual width without having to do the math of figuring out the padding and border<br>*****NOTE THAT MARGINS ARE NOT INCLUDED*****<br><br>
+    <div class="play">
+        <h2>Left Side</h2>
+        <p>Here is the content</p>
+    </div>
+    <div class = "play">
+        <h2>Right Side</h2>
+        <p>Here is the content</p>
+    </div>
 
+    <section>
+        Can you?
+        <ol>
+            <li>Put these divs next to each other? Make the screen smaller, still working?</li>
+            <li>Make them taller?</li>
+            <li>After you do all that, can you now center them under each other?</li>
+        </ol>
+    </section>
 </body>
 
 </html>
