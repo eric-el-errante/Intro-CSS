@@ -73,3 +73,44 @@ div.play {
     margin: 0 auto;
     display: inline-block;          /* this will put the divs on a line together */
 }
+
+/* links will take most common css styling */
+a {                               
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0006CC;
+    width: 200px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;          /* this iwll take away underline */      
+    margin: 0 auto;                 /* centers it REMEMBER */
+    margin-top: 10px;
+}
+
+/* normal, unvisited link */
+a:link {
+
+}
+
+/* visited link */
+a:visited {
+
+}
+
+/* what happens when mouse hovers over link */
+a:hover {
+    background: #B3B3B3;
+    color: #0006CC;
+}
+
+/* non-hover version of hover, like with tab key */
+a:focus {
+    background: #B3B3B3;
+    color: #0006CC;
+}
+
+/* while link is being click */
+a:active {
+
+}
