@@ -1,0 +1,54 @@
+body {
+    background-color: #ffffff;
+    margin: 4%;
+    font-size: 125%;
+}
+
+/* This will style ALL <h1> */
+h1 {
+    background: #0021A5;                       /* Colors should be in hexadecimal */
+    color: rgba(250,70,22,1);                  /* rgba is also acceptable, 4th number is opacity */
+    font-family: Arial, Helvetica, sans-serif;   /* provides alternative font families in case they are not supported by browser */
+    font-style: italic;                          /* normal, italic, oblique */
+    font-variant: small-caps;                    /* normal, small-caps, etc */
+    font-size: 500%;                             /* small/medium/large, can designate pixels, or percentage of baseline font size */
+    text-align: center;                          /* left, center, right, justify */
+    line-height: 100%;                           /* adjust space between lines, percentage */
+}
+
+header {
+    background: #FCAF17;
+    text-align: center;
+}
+
+nav {
+    font-variant: small-caps;
+    font-size: 150%;
+    font-family: sans-serif;
+    padding: 0px 0px 10px 0px;
+}
+
+h2 {
+    background: #6C9AC3;
+    color: #FFFFFF;
+}
+
+details {
+    font-style: italic;
+}
+
+summary {
+    font-style: normal;
+}
+
+footer {
+    text-align: center;
+    background: #FCAF17;
+    color: #0021A5;
+}
+
+section {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+}

@@ -114,3 +114,12 @@ a:focus {
 a:active {
 
 }
+
+ol.styletype {
+    list-style-type: lower-roman;   /* changes ordered number system: lower-roman, upper-roman, decimal, etc */
+}
+
+ul.styletype {
+    list-style-type: circle;                    /* circle, disc, square, etc */
+    list-style-image: square url('icon.gif')    /* uses a square if image cannot be found */
+}

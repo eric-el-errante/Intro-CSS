@@ -1,0 +1,35 @@
+/* Descendant Selector: Will only apply to any <a> contained inside <nav> */
+nav a {
+    color: #CCC000;
+}
+
+/* Child Selector: will only apply to <a> that is a direct child of a <p> */
+nav > a {
+    background-color: #CCC000;
+    color: #000000;
+}
+
+/* this will only apply to the one element with an id="One" */
+#One {
+    background-color: aliceblue;
+    color: darkgreen;
+}
+
+/* class selector will apply to ANY element with the specified class */
+.yellow {
+    background-color: black;
+    color: yellow;
+}
+
+/* attribute selector */
+a[href="http://www.soccernet.com"] {
+    background-color: blue;
+    color: white;
+}
+
+/* 
+a[href^='http://umich'] match the beginning exactly
+img[src$='.png']        match the end exactly
+a[href*='umich']        in there somewhere
+*/
+
